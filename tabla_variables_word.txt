@@ -1,27 +1,27 @@
-Variable (Campo SQL)	Origen de los Datos	Tipo / Clasificación	Descripción e Importancia
-id_ciudad	Dimensión Ciudades	Original (Encontrada)	Clave primaria que vincula geográficamente las fuentes de datos.
-nombre	Dimensión Ciudades	Original (Encontrada)	Nombre de la zona de estudio (Quito, Guayaquil, Riobamba, Cuenca).
-region	Dimensión Ciudades	Original (Encontrada)	Región natural (Sierra o Costa), útil para categorizar climas.
-latitud	Dimensión Ciudades	Original (Encontrada)	Latitud del centro geográfico de la ciudad.
-longitud	Dimensión Ciudades	Original (Encontrada)	Longitud del centro geográfico de la ciudad.
-altitud_msnm	Dimensión Ciudades	Original (Encontrada)	Altitud de la zona. Influye directamente en la presión y el viento.
-temperatura_media	Clima diario (NASA POWER)	Original (Encontrada)	Temperatura promedio del día en grados Celsius (°C).
-temperatura_max	Clima diario (NASA POWER)	Original (Encontrada)	Temperatura máxima alcanzada en el día (°C).
-temperatura_min	Clima diario (NASA POWER)	Original (Encontrada)	Temperatura mínima alcanzada en el día (°C).
-humedad_relativa	Clima diario (NASA POWER)	Original (Encontrada)	Humedad relativa del aire diaria promedio (%).
-velocidad_viento	Clima diario (NASA POWER)	Original (Encontrada)	Velocidad promedio diaria del viento registrada a 10m de altura (m/s).
-direccion_viento	Clima diario (NASA POWER)	Original (Encontrada)	Dirección de procedencia del viento en grados (0° - 360°).
-precipitacion	Clima diario (NASA POWER)	Original (Encontrada)	Lluvia diaria acumulada medida en milímetros (mm/día).
-ndvi	Vegetación Satelital (MODIS)	Original (Encontrada)	Índice de Vegetación de Diferencia Normalizada (verdor y densidad).
-conteo_incendios	Incendios (NASA FIRMS)	Original (Encontrada)	Número de anomalías térmicas (puntos de fuego) detectadas ese día.
-max_frp	Incendios (NASA FIRMS)	Original (Encontrada)	Máximo Poder Radiativo del Incendio (Fire Radiative Power en MW) del día.
-fecha	Registro diario	Original (Encontrada)	Fecha calendario de la observación.
-ciudad_cod	Código de ML	Creada (Ing. de Variables)	Representación numérica de la ciudad (0, 1, 2, 3) mediante LabelEncoder.
-mes	Código de ML	Creada (Ing. de Variables)	Mes calendario (1 al 12) extraído a partir de la fecha.
-trimestre	Código de ML	Creada (Ing. de Variables)	Trimestre del año (1 al 4) extraído a partir de la fecha.
-dia_anio	Código de ML	Creada (Ing. de Variables)	Día transcurrido del año (1 al 365) extraído a partir de la fecha.
-es_estacion_seca	Código de ML	Creada (Ing. de Variables)	Flag binario (1 si el mes está en [6, 7, 8, 9]; 0 si no).
-incendio_binario	Código de ML	Creada (Ing. de Variables)	Variable objetivo (Target): 1 si conteo_incendios > 0; 0 si es 0.
+Variable (Campo SQL)	Base de Datos / Sensor Específico	Tipo / Origen	Descripción e Importancia
+id_ciudad	Coordenadas Geográficas Oficiales de Ecuador	Original (Encontrada)	Clave primaria que vincula geográficamente las fuentes de datos.
+nombre	Coordenadas Geográficas Oficiales de Ecuador	Original (Encontrada)	Nombre de la zona de estudio (Quito, Guayaquil, Riobamba, Cuenca).
+region	Catastro Geográfico Nacional de Ecuador	Original (Encontrada)	Región natural (Sierra o Costa), útil para categorizar climas.
+latitud	Coordenadas Geográficas Oficiales (WGS84)	Original (Encontrada)	Latitud del centro geográfico de la ciudad.
+longitud	Coordenadas Geográficas Oficiales (WGS84)	Original (Encontrada)	Longitud del centro geográfico de la ciudad.
+altitud_msnm	Catastro Geográfico Nacional de Ecuador	Original (Encontrada)	Altitud de la zona. Influye directamente en la presión y el viento.
+temperatura_media	NASA POWER Database (Asimilación Global)	Original (Encontrada)	Temperatura promedio del día en grados Celsius (°C).
+temperatura_max	NASA POWER Database (Asimilación Global)	Original (Encontrada)	Temperatura máxima alcanzada en el día (°C).
+temperatura_min	NASA POWER Database (Asimilación Global)	Original (Encontrada)	Temperatura mínima alcanzada en el día (°C).
+humedad_relativa	NASA POWER Database (Asimilación Global)	Original (Encontrada)	Humedad relativa del aire diaria promedio (%).
+velocidad_viento	NASA POWER Database (Asimilación Global)	Original (Encontrada)	Velocidad promedio diaria del viento registrada a 10m de altura (m/s).
+direccion_viento	NASA POWER Database (Asimilación Global)	Original (Encontrada)	Dirección de procedencia del viento en grados (0° - 360°).
+precipitacion	NASA POWER Database (Asimilación Global)	Original (Encontrada)	Lluvia diaria acumulada medida en milímetros (mm/día).
+ndvi	Satélite MODIS (NASA - Producto MOD13Q1)	Original (Encontrada)	Índice de Vegetación de Diferencia Normalizada (verdor y densidad).
+conteo_incendios	NASA FIRMS (Sensores MODIS/VIIRS)	Original (Encontrada)	Número de anomalías térmicas (puntos de fuego) detectadas ese día.
+max_frp	NASA FIRMS (Sensores MODIS/VIIRS)	Original (Encontrada)	Máximo Poder Radiativo del Incendio (Fire Radiative Power en MW) del día.
+fecha	Calendario civil diario	Original (Encontrada)	Fecha calendario de la observación.
+ciudad_cod	Algoritmo LabelEncoder (Python)	Creada (Ing. de Variables)	Representación numérica de la ciudad (0, 1, 2, 3) para algoritmos de ML.
+mes	Extracción temporal (Python)	Creada (Ing. de Variables)	Mes calendario (1 al 12) extraído a partir de la fecha.
+trimestre	Extracción temporal (Python)	Creada (Ing. de Variables)	Trimestre del año (1 al 4) extraído a partir de la fecha.
+dia_anio	Extracción temporal (Python)	Creada (Ing. de Variables)	Día transcurrido del año (1 al 365) extraído a partir de la fecha.
+es_estacion_seca	Clasificación lógica (Python)	Creada (Ing. de Variables)	Flag binario (1 si el mes está en [6, 7, 8, 9]; 0 si no).
+incendio_binario	Clasificación lógica (Python/SQL)	Creada (Ing. de Variables)	Variable objetivo (Target): 1 si conteo_incendios > 0; 0 si es 0.
 
 =========================================================================
 IMPORTANCIA Y ROL DE LAS VARIABLES EN LOS MODELOS
@@ -29,7 +29,7 @@ IMPORTANCIA Y ROL DE LAS VARIABLES EN LOS MODELOS
 
 1. Para el Agrupamiento Climático (K-Means - No Supervisado)
 El objetivo de este modelo es categorizar el clima del territorio en niveles de riesgo (Bajo, Medio, Alto). Para ello, agrupa las observaciones diarias usando:
-* temperatura_media, humedad_relativa, precipitacion y velocidad_viento (variables climáticas originales) combinadas con el ndvi (vegetación original).
+* temperatura_media, humedad_relativa, precipitacion y velocidad_viento (variables climáticas originales de NASA POWER) combinadas con el ndvi (vegetación de satélite MODIS).
 * Importancia: La combinación de altas temperaturas, humedades extremadamente bajas (sequedad en el aire) y un índice NDVI bajo (suelo reseco o vegetación muerta) determina el clúster de Riesgo Alto, ya que son las condiciones físicas necesarias para que el material vegetal actúe como combustible.
 
 2. Para la Predicción de Probabilidad de Incendio (XGBoost - Supervisado)
