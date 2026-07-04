@@ -1,7 +1,7 @@
 [
     {
         "proyecto": "Incendios Forestales Ecuador 2012-2026",
-        "fecha": "2026-07-04T15:51:34.573839",
+        "fecha": "2026-07-04T15:59:02.257005",
         "algoritmo": "Random Forest",
         "libreria": "scikit-learn",
         "parametros": {
@@ -42,7 +42,7 @@
     },
     {
         "proyecto": "Incendios Forestales Ecuador 2012-2026",
-        "fecha": "2026-07-04T15:51:34.573839",
+        "fecha": "2026-07-04T15:59:02.257005",
         "algoritmo": "XGBoost",
         "libreria": "xgboost",
         "parametros": {

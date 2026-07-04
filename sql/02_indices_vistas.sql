@@ -160,3 +160,23 @@ OUTER APPLY (
     ORDER BY n.fecha DESC
 ) nd;
 GO
+
+-- Vista 4: vw_HistoricoIncendios (Focos históricos de incendios con relación a ciudades)
+IF OBJECT_ID('vw_HistoricoIncendios', 'V') IS NOT NULL
+    DROP VIEW vw_HistoricoIncendios;
+GO
+
+CREATE VIEW vw_HistoricoIncendios AS
+SELECT 
+    i.latitud,
+    i.longitud,
+    i.confianza,
+    i.frp,
+    i.fecha_deteccion,
+    i.satelite,
+    i.id_ciudad,
+    c.nombre AS ciudad_nombre,
+    c.region AS ciudad_region
+FROM Incendios i
+JOIN Ciudades c ON i.id_ciudad = c.id_ciudad;
+GO

@@ -31,6 +31,7 @@ GO
 GRANT SELECT ON vw_DatosUnificados TO rol_analista;
 GRANT SELECT ON vw_ResumenMensualCiudad TO rol_analista;
 GRANT SELECT ON vw_RiesgoActual TO rol_analista;
+GRANT SELECT ON vw_HistoricoIncendios TO rol_analista;
 
 -- El Administrador tiene control total para manipulación de datos y esquema
 GRANT SELECT, INSERT, UPDATE, DELETE ON Ciudades TO rol_admin;
@@ -38,6 +39,14 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON Incendios TO rol_admin;
 GRANT SELECT, INSERT, UPDATE, DELETE ON Clima TO rol_admin;
 GRANT SELECT, INSERT, UPDATE, DELETE ON NDVI TO rol_admin;
 GRANT SELECT ON Auditoria TO rol_admin;
+GRANT SELECT ON vw_DatosUnificados TO rol_admin;
+GRANT SELECT ON vw_ResumenMensualCiudad TO rol_admin;
+GRANT SELECT ON vw_RiesgoActual TO rol_admin;
+GRANT SELECT ON vw_HistoricoIncendios TO rol_admin;
+
+-- Permisos de backup para el Administrador (necesarios para el DRP)
+GRANT BACKUP DATABASE TO rol_admin;
+GRANT BACKUP LOG TO rol_admin;
 GO
 
 
