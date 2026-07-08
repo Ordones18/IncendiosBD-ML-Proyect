@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guion de Presentación — FireGuard 360</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: #1e293b;
+            background-color: #f8fafc;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px;
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+            border-radius: 12px;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 25px;
+            margin-bottom: 35px;
+        }
+        .header h1 {
+            font-size: 28px;
+            color: #0f172a;
+            margin: 0 0 10px 0;
+            font-weight: 800;
+        }
+        .header p {
+            color: #64748b;
+            font-size: 16px;
+            margin: 0;
+        }
+        .time-box {
+            background-color: #f1f5f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            border-left: 5px solid #64748b;
+        }
+        .time-box h2 {
+            font-size: 18px;
+            margin: 0 0 10px 0;
+            color: #334155;
+        }
+        .time-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            font-size: 14px;
+        }
+        .time-item {
+            background: #ffffff;
+            padding: 8px 12px;
+            border-radius: 6px;
+            border: 1px solid #e2e8f0;
+            display: flex;
+            justify-content: space-between;
+        }
+        .time-item strong {
+            color: #0f172a;
+        }
+        .slide-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+        }
+        .slide-header {
+            background-color: #0f172a;
+            color: #ffffff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .slide-header h2 {
+            font-size: 18px;
+            margin: 0;
+            font-weight: 600;
+        }
+        .slide-time {
+            font-size: 13px;
+            background: rgba(255,255,255,0.2);
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+        .slide-body {
+            padding: 25px;
+        }
+        .visual-content {
+            background-color: #f8fafc;
+            border: 1px dashed #cbd5e1;
+            padding: 15px 20px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+        .visual-content h3 {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #64748b;
+            margin: 0 0 10px 0;
+        }
+        .visual-content ul {
+            margin: 0;
+            padding-left: 20px;
+            font-size: 14.5px;
+        }
+        .video-script {
+            background-color: #fff1f2;
+            border-left: 4px solid #f43f5e;
+            padding: 15px 20px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+        .video-script h3 {
+            font-size: 14px;
+            color: #be123c;
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .video-timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            font-size: 14px;
+        }
+        .timeline-step {
+            padding-left: 15px;
+            border-left: 2px solid #fda4af;
+        }
+        .timeline-step strong {
+            color: #9f1239;
+        }
+        .speech-content {
+            background-color: #eff6ff;
+            border-left: 4px solid #3b82f6;
+            padding: 20px;
+            border-radius: 6px;
+            color: #1e3a8a;
+        }
+        .speech-content h3 {
+            font-size: 14px;
+            color: #1d4ed8;
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .speech-content p {
+            margin: 0;
+            font-size: 15px;
+            text-align: justify;
+            line-height: 1.6;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Guion de Presentación y Estructura — FireGuard 360</h1>
+        <p>Predicción y Simulación de Riesgo de Incendios Forestales en Ecuador (Exposición de 10 Minutos)</p>
+    </div>
+
+    <div class="time-box">
+        <h2>⏱️ Distribución del Tiempo de Defensa</h2>
+        <div class="time-grid">
+            <div class="time-item"><span>Diapositiva 1 (Video)</span><strong>1:15</strong></div>
+            <div class="time-item"><span>Diapositiva 2 (Física)</span><strong>1:00</strong></div>
+            <div class="time-item"><span>Diapositiva 3 (Estaciones)</span><strong>1:00</strong></div>
+            <div class="time-item"><span>Diapositiva 4 (Arquitectura)</span><strong>1:00</strong></div>
+            <div class="time-item"><span>Diapositiva 5 (Lag Features)</span><strong>1:00</strong></div>
+            <div class="time-item"><span>Diapositiva 6 (Modelos)</span><strong>1:30</strong></div>
+            <div class="time-item"><span>Diapositiva 7 (Importancia)</span><strong>1:00</strong></div>
+            <div class="time-item"><span>Diapositiva 8 (Demo App)</span><strong>1:15</strong></div>
+            <div class="time-item"><span>Diapositiva 9 (Cierre)</span><strong>1:00</strong></div>
+        </div>
+    </div>
+
+    <!-- DIAPOSITIVA 1 -->
+    <div class="slide-card">
+        <div class="slide-header">
+            <h2>Diapositiva 1: Portada e Impacto Histórico (Quito, Septiembre 2024)</h2>
+            <span class="slide-time">Tiempo: 0:00 - 1:15</span>
+        </div>
+        <div class="slide-body">
+            <div class="visual-content">
+                <h3>Contenido Visual</h3>
+                <ul>
+                    <li>Título principal: <strong>FireGuard 360: Persistencia Híbrida y ML para la Alerta Temprana de Incendios en Ecuador</strong>.</li>
+                    <li>Datos en tipografía grande y limpia: <strong>Quito, Septiembre 2024: +1,600 Hectáreas Devastadas | Guápulo, Cumbayá y Auqui bajo el fuego</strong>.</li>
+                    <li>Cuadro reproductor de video integrado (30 segundos).</li>
+                </ul>
+            </div>
+
+            <div class="video-script">
+                <h3>🎬 Mini-guion de Video (30s) — Narrativa Dramática y Emotiva</h3>
+                <div class="video-timeline">
+                    <div class="timeline-step">
+                        <strong>Segundos 0-10 (Silencio, crujir de llamas y sirenas distantes):</strong><br>
+                        <em>Voz en off:</em> "El cielo de Quito se oscureció en pleno mediodía. No era una tormenta de lluvia... era el humo de nuestro propio hogar consumiéndose en las laderas de Guápulo."
+                    </div>
+                    <div class="timeline-step">
+                        <strong>Segundos 10-20 (Música de tensión dramática en crescendo):</strong><br>
+                        <em>Voz en off:</em> "El fuego no respetó linderos ni historias. Familias enteras con baldes de agua intentando detener llamas de 10 metros, impulsadas por ráfagas que devoraban años de vegetación en segundos."
+                    </div>
+                    <div class="timeline-step">
+                        <strong>Segundos 20-30 (Música resolutiva y cierre):</strong><br>
+                        <em>Voz en off:</em> "Esta tragedia nos demostró que el aire seco es el verdadero detonante. Detrás del humo hay datos; y detrás de los datos, la oportunidad de actuar antes de que todo vuelva a ser ceniza."
+                    </div>
+                </div>
+            </div>
+
+            <div class="speech-content">
+                <h3>🗣️ Guion de Voz (Expositor)</h3>
+                <p>"El 24 de septiembre de 2024 no fue un día más para Quito. La ciudad se enfrentó a uno de los peores desastres forestales de la última década, que obligó a suspender clases, evacuar barrios enteros y movilizar a todo el cuerpo de bomberos. [Iniciar Video de 30s] Los incendios forestales en nuestro país no son accidentes aleatorios, son crisis aceleradas por la sequedad y el viento. La pregunta que motivó nuestra investigación es: ¿Cómo podemos anticiparnos a esta devastación utilizando la tecnología y los datos de la NASA? Hoy les presentamos FireGuard 360, una plataforma que combina bases de datos híbridas y machine learning para alertar y simular el riesgo de incendios en Ecuador."</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- DIAPOSITIVA 2 -->
+    <div class="slide-card">
+        <div class="slide-header">
+            <h2>Diapositiva 2: Justificación Física y Elección de Variables</h2>
+            <span class="slide-time">Tiempo: 1:15 - 2:15</span>
+        </div>
+        <div class="slide-body">
+            <div class="visual-content">
+                <h3>Contenido Visual</h3>
+                <ul>
+                    <li>Gráfica Latinometrics: <strong>Precipitación mensual vs. Temperatura Máxima</strong>.</li>
+                    <li>Llamada de impacto: <em>"La evaporación de 3 días consecutivos reduce la humedad foliar a menos del 10%, convirtiendo el pajonal en combustible seco"</em>.</li>
+                    <li>Variables Clave: Calor acumulado, Déficit estival de lluvias y Salud foliar de vegetación (NDVI).</li>
+                </ul>
+            </div>
+            <div class="speech-content">
+                <h3>🗣️ Guion de Voz (Expositor)</h3>
+                <p>"Para predecir un incendio con bases científicas, primero debemos comprender su física. Analizando los datos históricos (2012-2026), identificamos que el verdadero disparador en la Sierra andina no es solo el calor de un día caluroso aislado, sino el déficit acumulativo de humedad. Como se observa en nuestra gráfica en estilo Latinometrics, durante el verano (julio a septiembre) la precipitación cae a sus mínimos históricos, mientras la curva de temperaturas máximas promedio escala hasta superar los 24.6 °C. Esta combinación evapora el agua del suelo y marchita la cobertura vegetal (NDVI), reduciendo la humedad del follaje a niveles críticamente inflamables. Esto justifica por qué seleccionamos temperatura, lluvia, humedad, viento y NDVI como variables predictoras."</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- DIAPOSITIVA 3 -->
+    <div class="slide-card">
+        <div class="slide-header">
+            <h2>Diapositiva 3: Comportamiento Estacional de Incendios en Ecuador</h2>
+            <span class="slide-time">Tiempo: 2:15 - 3:15</span>
+        </div>
+        <div class="slide-body">
+            <div class="visual-content">
+                <h3>Contenido Visual</h3>
+                <ul>
+                    <li>Gráfica Latinometrics: <strong>Detecciones satelitales acumuladas por mes (Noviembre como pico)</strong>.</li>
+                    <li>Llamada de impacto: <strong>"Noviembre: Pico histórico con un récord de 19,138 focos acumulados en el dataset"</strong>.</li>
+                    <li>Variables temporales: Estación seca, Mes, Trimestre y Día del año.</li>
+                </ul>
+            </div>
+            <div class="speech-content">
+                <h3>🗣️ Guion de Voz (Expositor)</h3>
+                <p>"Al cruzar el registro climático con los focos reales detectados por los satélites MODIS y VIIRS de la NASA, la estacionalidad queda en evidencia. Este gráfico de barras acumuladas muestra cómo la actividad del fuego comienza a crecer a partir de julio y alcanza su pico crítico absoluto en el mes de Noviembre, acumulando un récord histórico de 19,138 focos de calor en nuestro dataset. Este patrón de acumulación estival demuestra que el riesgo es temporalmente predecible y responde a meses acumulados de sequía. Por esta razón, incluimos variables temporales como el mes, el trimestre y el día del año, además de una bandera binaria de estación seca, permitiendo al algoritmo entender el comportamiento cíclico del fuego en nuestro territorio."</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- DIAPOSITIVA 4 -->
+    <div class="slide-card">
+        <div class="slide-header">
+            <h2>Diapositiva 4: Arquitectura de Persistencia Híbrida (SQL + MongoDB)</h2>
+            <span class="slide-time">Tiempo: 3:15 - 4:15</span>
+        </div>
+        <div class="slide-body">
+            <div class="visual-content">
+                <h3>Contenido Visual</h3>
+                <ul>
+                    <li>Esquema de Base de Datos Híbrida.</li>
+                    <li>SQL Server (3FN, vw_DatosUnificados mediante OUTER APPLY).</li>
+                    <li>MongoDB (Experimentos en formato JSON y logs forenses de auditoría).</li>
+                    <li>Llamada de rendimiento: <strong>"Unificación temporal de 72,532 alertas satelitales y 21,100 registros climáticos en 0.45 segundos"</strong>.</li>
+                </ul>
+            </div>
+            <div class="speech-content">
+                <h3>🗣️ Guion de Voz (Expositor)</h3>
+                <p>"Unificar datos de clima diario, lecturas satelitales de NDVI cada 16 días y alertas esporádicas de incendios es un desafío lógico complejo. Para resolverlo, diseñamos una arquitectura de persistencia híbrida. La base relacional, implementada en SQL Server bajo la Tercera Forma Normal (3FN), aloja los datos estructurados en una estrella de hechos y dimensiones. Creamos la vista dinámica vw_DatosUnificados mediante el operador OUTER APPLY. Esto permite que a cada día de clima se le asocie la lectura real de NDVI más cercana hacia atrás en el tiempo, evitando inyectar datos sintéticos y resolviendo el cruce de las 72,532 alertas satelitales de incendios con las 21,100 filas de clima en menos de 0.45 segundos gracias al uso de índices no agrupados. De manera complementaria, MongoDB actúa como nuestro repositorio NoSQL. Al ser una base documental, nos da la flexibilidad de guardar en formato JSON los hiperparámetros e índices de desempeño de cada experimento de MLOps, garantizando la trazabilidad, además de registrar logs forenses de las acciones de los usuarios en tiempo real."</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- DIAPOSITIVA 5 -->
+    <div class="slide-card">
+        <div class="slide-header">
+            <h2>Diapositiva 5: Ingeniería de Variables de Memoria Climática (Lag Features)</h2>
+            <span class="slide-time">Tiempo: 4:15 - 5:15</span>
+        </div>
+        <div class="slide-body">
+            <div class="visual-content">
+                <h3>Contenido Visual</h3>
+                <ul>
+                    <li>Esquema de ventana móvil de 3 días agrupada por ciudad.</li>
+                    <li>Variables dinámicas: temp_max_promedio_3d, precipitacion_acumulada_3d, humedad_promedio_3d, viento_promedio_3d.</li>
+                    <li>Llamada predictiva: <strong>"La media acumulada de 3 días previos superó en peso predictivo al clima del mismo día, confirmando el comportamiento físico acumulativo"</strong>.</li>
+                </ul>
+            </div>
+            <div class="speech-content">
+                <h3>🗣️ Guion de Voz (Expositor)</h3>
+                <p>"Una de las mayores innovaciones metodológicas de este proyecto para evitar el sobreajuste y mejorar la precisión fue el desarrollo de variables de memoria climática acumulada, conocidas en ciencia de datos como Lag Features. En lugar de alimentar al modelo únicamente con el clima de las últimas 24 horas, calculamos la media móvil y sumas acumuladas de los últimos 3 días agrupadas cronológicamente por ciudad. Esto simula el proceso acumulativo real de desecación del material forestal: un día lluvioso seguido de dos días calurosos tiene un riesgo significativamente menor de incendio que tres días de calor extremo y nula lluvia. Estas variables le otorgan al modelo una 'memoria temporal' que mejoró sustancialmente la precisión del modelo."</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- DIAPOSITIVA 6 -->
+    <div class="slide-card">
+        <div class="slide-header">
+            <h2>Diapositiva 6: Resultados y Comparativa de Modelos</h2>
+            <span class="slide-time">Tiempo: 5:15 - 6:45</span>
+        </div>
+        <div class="slide-body">
+            <div class="visual-content">
+                <h3>Contenido Visual</h3>
+                <ul>
+                    <li>Tabla comparativa de métricas: Random Forest vs. XGBoost.</li>
+                    <li>Métricas de XGBoost: <strong>Accuracy: 69.22% | Recall (Sensibilidad): 63.81% | F1-Score: 62.27%</strong>.</li>
+                    <li>Llamada de valor: <strong>"XGBoost redujo los falsos negativos en un 13.6% al elevar el Recall de 50.18% a 63.81%"</strong>.</li>
+                </ul>
+            </div>
+            <div class="speech-content">
+                <h3>🗣️ Guion de Voz (Expositor)</h3>
+                <p>"Evaluamos dos de los algoritmos más potentes para datos tabulares: Random Forest y XGBoost. Tras una división estratificada 80/20 y escalamiento, aplicamos regularizaciones e hiperparámetros para penalizar el ruido y asegurar la generalización. Como se observa en la tabla de resultados, el modelo ganador es XGBoost, logrando una exactitud (Accuracy) de 69.22% y un área bajo la curva (AUC-ROC) de 73.51%. Sin embargo, la métrica estrella en nuestro contexto es el Recall (Sensibilidad), el cual logramos impulsar hasta el 63.81% gracias al ajuste de pesos de clase (scale_pos_weight=1.5). En la gestión de desastres, el costo de un falso negativo (no predecir un incendio que sí ocurre) es devastador. Un Recall del 63.81% en el conjunto de prueba independiente (21,100 registros) garantiza que el modelo actúa como un escudo preventivo confiable, capturando la mayoría de los eventos críticos y alertando a los equipos de emergencia a tiempo."</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- DIAPOSITIVA 7 -->
+    <div class="slide-card">
+        <div class="slide-header">
+            <h2>Diapositiva 7: Importancia de Variables en XGBoost (Feature Importance)</h2>
+            <span class="slide-time">Tiempo: 6:45 - 7:45</span>
+        </div>
+        <div class="slide-body">
+            <div class="visual-content">
+                <h3>Contenido Visual</h3>
+                <ul>
+                    <li>Gráfica de barras de importancia de variables del modelo XGBoost.</li>
+                    <li>Llamada de validación: <strong>"El viento promedio de 3 días (viento_promedio_3d) lidera el peso predictivo en la Sierra andina, donde los vientos secos actúan como sopletes en pastizales secos"</strong>.</li>
+                    <li>Variables de viento, humedad relativa, temperatura y salud vegetal (NDVI).</li>
+                </ul>
+            </div>
+            <div class="speech-content">
+                <h3>🗣️ Guion de Voz (Expositor)</h3>
+                <p>"Para validar la coherencia física de nuestro modelo de Machine Learning, analizamos el peso predictivo que el algoritmo XGBoost asignó a cada variable. El gráfico revela un comportamiento lógico e interesante: la velocidad del viento (velocidad_viento) y su dirección, junto con el promedio de viento de 3 días, lideran la importancia de variables. El viento no solo aporta el oxígeno necesario para acelerar la combustión, sino que es el motor de la propagación física de las llamas. Inmediatamente después se ubican la humedad relativa y la temperatura máxima acumulada de 3 días, seguidas del NDVI. Este resultado valida empíricamente nuestra hipótesis inicial: el riesgo de incendios es un proceso acumulativo condicionado por la desecación del material forestal fino y la fuerza del viento local."</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- DIAPOSITIVA 8 -->
+    <div class="slide-card">
+        <div class="slide-header">
+            <h2>Diapositiva 8: Plataforma Interactiva FireGuard 360 (Streamlit)</h2>
+            <span class="slide-time">Tiempo: 7:45 - 9:00</span>
+        </div>
+        <div class="slide-body">
+            <div class="visual-content">
+                <h3>Contenido Visual</h3>
+                <ul>
+                    <li>Capturas del login por roles, monitoreo de anomalías térmicas y simulación física de pluma de viento.</li>
+                    <li>Llamada de gobernanza: <strong>"Auditoría forense de logins de MongoDB Compass y restauración DRP de SQL Server en menos de 10 segundos ante fallos críticos simulados"</strong>.</li>
+                </ul>
+            </div>
+            <div class="speech-content">
+                <h3>🗣️ Guion de Voz (Expositor)</h3>
+                <p>"Toda esta complejidad científica fue empaquetada en una aplicación web interactiva desarrollada en Streamlit, llamada FireGuard 360. La plataforma cuenta con seguridad basada en roles de base de datos. Un usuario analista puede visualizar en vivo mapas georreferenciados del país consumiendo la API activa de anomalías térmicas de la NASA, realizar inferencias ingresando variables en tiempo real y ejecutar simulaciones vectoriales del cono de propagación de llamas según el viento. Por su parte, la vista del administrador permite auditar los logs forenses de MongoDB, garantizando la gobernanza del sistema, y ejecutar copias de seguridad DRP (Full, Diferencial e incremental) de SQL Server directamente desde la web, asegurando la continuidad del sistema ante fallos críticos."</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- DIAPOSITIVA 9 -->
+    <div class="slide-card">
+        <div class="slide-header">
+            <h2>Diapositiva 9: Conclusiones e Impacto</h2>
+            <span class="slide-time">Tiempo: 9:00 - 10:00</span>
+        </div>
+        <div class="slide-body">
+            <div class="visual-content">
+                <h3>Contenido Visual</h3>
+                <ul>
+                    <li>Tres Conclusiones Clave: Gobernanza con persistencia híbrida, Sensibilidad de XGBoost (Recall 63.81%) e Impacto en la prevención real de incendios.</li>
+                    <li>Cierre formal y datos de contacto del grupo de investigación.</li>
+                </ul>
+            </div>
+            <div class="speech-content">
+                <h3>🗣️ Guion de Voz (Expositor)</h3>
+                <p>"Para concluir, esta investigación demuestra que la integración de variables biológicas y meteorológicas satelitales a través de una persistencia políglota proporciona una herramienta robusta de soporte a las decisiones. Logramos eliminar las fugas de datos mediante vistas relacionales y potenciar la sensibilidad predictiva de XGBoost al 63.81% sin incurrir en sobreajuste. FireGuard 360 demuestra que la ciencia de datos puede y debe ser el pilar fundamental en la prevención de desastres forestales en Ecuador, salvaguardando la biodiversidad y protegiendo vidas humanas en nuestras ciudades. Quedamos a su entera disposición para la ronda de preguntas. Muchas gracias por su atención."</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
