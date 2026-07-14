@@ -2,3 +2,8 @@ __pycache__/
 .ipynb_checkpoints/
 temp_git/
 *.pyc
+
+# Archivos de presentación y gráficas locales
+graficas_interactivas.html
+guion_expo_def.html
+presentacion_dinamica.html
